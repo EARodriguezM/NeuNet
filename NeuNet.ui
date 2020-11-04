@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>EARodriguezM</author>
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>960</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);
+selection-color: rgb(114, 159, 207);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(189, 189, 189);</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="TabLauncher" name="tabLauncher">
+       <attribute name="title">
+        <string>Launcher</string>
+       </attribute>
+      </widget>
+      <widget class="TabProject" name="tabProject">
+       <attribute name="title">
+        <string>Project</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_files_select">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>380</width>
+            <height>520</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(224, 224, 224);</string>
+          </property>
+          <property name="title">
+           <string>Selección de Archivos</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout">
+             <item row="4" column="3">
+              <widget class="QLineEdit" name="lineEdit_T_file_name">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="3">
+              <widget class="QLineEdit" name="lineEdit_W_file_name">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="2">
+              <widget class="QLabel" name="label_T_file_name">
+               <property name="text">
+                <string>Vector Umbral</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QLabel" name="label_W_file_name">
+               <property name="text">
+                <string>Pesos Sinapticos</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <item>
+                <spacer name="verticalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="UploadButton" name="pushButtonUpload_datasets">
+                 <property name="text">
+                  <string>Subir Datos</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Expanding</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>10</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="DeleteButton" name="pushButtonDelete_datasets">
+                 <property name="text">
+                  <string>Eliminar Selección</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLineEdit" name="lineEdit_D_file_name">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <spacer name="verticalSpacer_4">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="UploadButton" name="pushButtonUpload_weights">
+                 <property name="text">
+                  <string>Subir Pesos</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_5">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="DeleteButton" name="pushButtonDelete_weights">
+                 <property name="text">
+                  <string>Eliminar Selección</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_6">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_D_file_name">
+               <property name="text">
+                <string>Datos de Entrada y Salida</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="2">
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <item>
+                <spacer name="verticalSpacer_7">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="UploadButton" name="pushButtonUpload_threshold">
+                 <property name="text">
+                  <string>PushButton</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_8">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="DeleteButton" name="pushButtonDelete_threshold">
+                 <property name="text">
+                  <string>PushButton</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_9">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="3">
+              <widget class="QTableWidget" name="tableWidget_datasets"/>
+             </item>
+             <item row="3" column="3">
+              <widget class="QTableWidget" name="tableWidget_weights"/>
+             </item>
+             <item row="5" column="3">
+              <widget class="QTableWidget" name="tableWidget_threshold"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="2">
+         <layout class="QGridLayout" name="gridLayout_7">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <item row="1" column="0">
+           <widget class="QGroupBox" name="groupBox_graphics_config">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(224, 224, 224);</string>
+            </property>
+            <property name="title">
+             <string>Configuración de Gráficos</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_9">
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_8">
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_interval_show">
+                 <property name="text">
+                  <string>Intervalo de Gráficos</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_res">
+                 <property name="text">
+                  <string>Resolución</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="lineEdit_res"/>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="lineEdit_interval_show"/>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox_parameters_config">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(224, 224, 224);</string>
+            </property>
+            <property name="title">
+             <string>Configuración de Parametros</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_6">
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_5">
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_iterations">
+                 <property name="text">
+                  <string>Numero de Iteracciones</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_learning_ratio">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Tasa de Aprendizaje</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="lineEdit_iterations"/>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="lineEdit_learning_ratio"/>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="label_err_max">
+                 <property name="text">
+                  <string>Error Maximo Permitido</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="lineEdit_err_max"/>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="1" colspan="2">
+         <widget class="QPushButton" name="pushButton_execute">
+          <property name="text">
+           <string>Empezar Entrenamiento</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="TabResults" name="tabResults">
+       <attribute name="title">
+        <string>Results</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_11">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_graphics">
+          <property name="title">
+           <string>Graficos</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_10">
+           <item row="0" column="0">
+            <widget class="QWidget" name="widget_train_simulation" native="true"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QWidget" name="widget_err_iterations" native="true"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="groupBox_values">
+          <property name="title">
+           <string>Valores</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_12">
+           <item row="2" column="2">
+            <widget class="QLineEdit" name="lineEdit_2">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLineEdit" name="lineEdit">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <spacer name="verticalSpacer_11">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2">
+            <widget class="QLineEdit" name="lineEdit_3"/>
+           </item>
+           <item row="3" column="0">
+            <spacer name="verticalSpacer_10">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="0">
+            <spacer name="verticalSpacer_12">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>PushButton</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>960</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionNuevo"/>
+    <addaction name="actionAbrir"/>
+    <addaction name="separator"/>
+    <addaction name="actionGuardar"/>
+    <addaction name="actionGuardar_Como"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuEditar">
+    <property name="title">
+     <string>Editar</string>
+    </property>
+    <addaction name="actionModificar_Datos_de_Entrada_y_Salida"/>
+    <addaction name="actionModificar_Pesos_Sinapticos"/>
+    <addaction name="actionModificar_Umbral"/>
+    <addaction name="separator"/>
+    <addaction name="actionModificar_Tasa_de_Aprendizaje"/>
+    <addaction name="actionModificar_Numero_de_Iteracciones"/>
+    <addaction name="actionModificar_Error_Maximo_Permitido"/>
+    <addaction name="separator"/>
+    <addaction name="actionModificar_Resolucion_de_Graficos"/>
+    <addaction name="actionModificar_Intervalo_de_Graficaci_n"/>
+   </widget>
+   <widget class="QMenu" name="menuVer">
+    <property name="title">
+     <string>Ver</string>
+    </property>
+    <addaction name="actionVista_Previa_de_Datos_de_Entrada_y_Salida"/>
+    <addaction name="actionVista_Previa_de_Pesos_Sinapticos"/>
+    <addaction name="actionVista_Previa_del_Vector_Umbral"/>
+    <addaction name="separator"/>
+    <addaction name="actionGrafica_de_Resultado"/>
+    <addaction name="actionGrafica_de_Error_de_Patr_n"/>
+    <addaction name="separator"/>
+    <addaction name="actionResumen_de_Entrenamiento"/>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="actionManual"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout_NeuNet"/>
+    <addaction name="actionAbout_Developer"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuEditar"/>
+   <addaction name="menuVer"/>
+   <addaction name="menuAyuda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNuevo">
+   <property name="text">
+    <string>Nuevo</string>
+   </property>
+  </action>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+  </action>
+  <action name="actionGuardar_Como">
+   <property name="text">
+    <string>Guardar Como...</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionModificar_Rata_de_Aprendizaje">
+   <property name="text">
+    <string>Modificar Rata de Aprendizaje</string>
+   </property>
+  </action>
+  <action name="actionModificar_Tasa_de_Aprendizaje">
+   <property name="text">
+    <string>Modificar Tasa de Aprendizaje</string>
+   </property>
+  </action>
+  <action name="actionModificar_Numero_de_Iteracciones">
+   <property name="text">
+    <string>Modificar Numero de Iteracciones</string>
+   </property>
+  </action>
+  <action name="actionModificar_Error_Maximo_Permitido">
+   <property name="text">
+    <string>Modificar Error Maximo Permitido</string>
+   </property>
+  </action>
+  <action name="actionVista_Previa_de_Datos_de_Entrada">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Vista Previa de Datos de Entrada</string>
+   </property>
+  </action>
+  <action name="actionVista_Previa_de_Datos_de_Salida">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Vista Previa de Datos de Salida</string>
+   </property>
+  </action>
+  <action name="actionVista_Previa_de_Pesos_Sinapticos">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Vista Previa de Pesos Sinapticos</string>
+   </property>
+  </action>
+  <action name="actionVista_Previa_del_Vector_Umbral">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Vista Previa del Vector Umbral</string>
+   </property>
+  </action>
+  <action name="actionGrafica_de_Resultado">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Grafica de Resultado</string>
+   </property>
+  </action>
+  <action name="actionGrafica_de_Error_de_Patr_n">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Grafica de Error de Patrón</string>
+   </property>
+  </action>
+  <action name="actionResumen_de_Entrenamiento">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Resumen de Entrenamiento</string>
+   </property>
+  </action>
+  <action name="actionManual">
+   <property name="text">
+    <string>Manual</string>
+   </property>
+  </action>
+  <action name="actionAbout_NeuNet">
+   <property name="text">
+    <string>About NeuNet</string>
+   </property>
+  </action>
+  <action name="actionAbout_Developer">
+   <property name="text">
+    <string>About Developer</string>
+   </property>
+  </action>
+  <action name="actionModificar_Resolucion_de_Graficos">
+   <property name="text">
+    <string>Modificar Resolucion de Graficos</string>
+   </property>
+  </action>
+  <action name="actionModificar_Datos_de_Entrada_y_Salida">
+   <property name="text">
+    <string>Modificar Datos de Entrada y Salida</string>
+   </property>
+  </action>
+  <action name="actionModificar_Pesos_Sinapticos">
+   <property name="text">
+    <string>Modificar Pesos Sinapticos</string>
+   </property>
+  </action>
+  <action name="actionModificar_Umbral">
+   <property name="text">
+    <string>Modificar Umbral</string>
+   </property>
+  </action>
+  <action name="actionModificar_Intervalo_de_Graficaci_n">
+   <property name="text">
+    <string>Modificar Intervalo de Graficación</string>
+   </property>
+  </action>
+  <action name="actionVista_Previa_de_Datos_d_Entrada_y_Salida">
+   <property name="text">
+    <string>Vista Previa de Datos d Entrada y Salida</string>
+   </property>
+  </action>
+  <action name="actionVista_Previa_de_Datos_de_Entrada_y_Salida">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Vista Previa de Datos de Entrada y Salida</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TabLauncher</class>
+   <extends>QWidget</extends>
+   <header>tablauncher.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TabProject</class>
+   <extends>QWidget</extends>
+   <header>tabproject.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>UploadButton</class>
+   <extends>QPushButton</extends>
+   <header>uploadbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>DeleteButton</class>
+   <extends>QPushButton</extends>
+   <header>deletebutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>TabResults</class>
+   <extends>QWidget</extends>
+   <header>tabresults.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
