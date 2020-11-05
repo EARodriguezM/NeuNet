@@ -22,9 +22,13 @@
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 255, 255);
-selection-color: rgb(114, 159, 207);</string>
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(114, 159, 207);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(189, 189, 189);</string>
    </property>
@@ -37,7 +41,7 @@ selection-color: rgb(114, 159, 207);</string>
       <property name="currentIndex">
        <number>0</number>
       </property>
-      <widget class="TabConfig" name="tab_config">
+      <widget class="QWidget" name="tab_config">
        <attribute name="title">
         <string>Configuración</string>
        </attribute>
@@ -128,7 +132,7 @@ border-color: rgb(224, 224, 224);</string>
                 </spacer>
                </item>
                <item>
-                <widget class="UploadButton" name="pushButtonUpload_datasets">
+                <widget class="QPushButton" name="pushButtonUpload_datasets">
                  <property name="text">
                   <string>Subir Datos</string>
                  </property>
@@ -151,7 +155,7 @@ border-color: rgb(224, 224, 224);</string>
                 </spacer>
                </item>
                <item>
-                <widget class="DeleteButton" name="pushButtonDelete_datasets">
+                <widget class="QPushButton" name="pushButtonDelete_datasets">
                  <property name="text">
                   <string>Eliminar Selección</string>
                  </property>
@@ -195,7 +199,7 @@ border-color: rgb(224, 224, 224);</string>
                 </spacer>
                </item>
                <item>
-                <widget class="UploadButton" name="pushButtonUpload_weights">
+                <widget class="QPushButton" name="pushButtonUpload_weights">
                  <property name="text">
                   <string>Subir Pesos</string>
                  </property>
@@ -215,7 +219,7 @@ border-color: rgb(224, 224, 224);</string>
                 </spacer>
                </item>
                <item>
-                <widget class="DeleteButton" name="pushButtonDelete_weights">
+                <widget class="QPushButton" name="pushButtonDelete_weights">
                  <property name="text">
                   <string>Eliminar Selección</string>
                  </property>
@@ -259,9 +263,9 @@ border-color: rgb(224, 224, 224);</string>
                 </spacer>
                </item>
                <item>
-                <widget class="UploadButton" name="pushButtonUpload_threshold">
+                <widget class="QPushButton" name="pushButtonUpload_threshold">
                  <property name="text">
-                  <string>PushButton</string>
+                  <string>Subir Umbral</string>
                  </property>
                 </widget>
                </item>
@@ -279,9 +283,9 @@ border-color: rgb(224, 224, 224);</string>
                 </spacer>
                </item>
                <item>
-                <widget class="DeleteButton" name="pushButtonDelete_threshold">
+                <widget class="QPushButton" name="pushButtonDelete_threshold">
                  <property name="text">
-                  <string>PushButton</string>
+                  <string>Eliminar Umbral</string>
                  </property>
                 </widget>
                </item>
@@ -447,7 +451,7 @@ border-color: rgb(224, 224, 224);</string>
         </item>
        </layout>
       </widget>
-      <widget class="TabResults" name="tab_results">
+      <widget class="QWidget" name="tab_results">
        <attribute name="title">
         <string>Resultados</string>
        </attribute>
@@ -809,30 +813,6 @@ border-color: rgb(224, 224, 224);</string>
    </property>
   </action>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>UploadButton</class>
-   <extends>QPushButton</extends>
-   <header>uploadbutton.h</header>
-  </customwidget>
-  <customwidget>
-   <class>DeleteButton</class>
-   <extends>QPushButton</extends>
-   <header>deletebutton.h</header>
-  </customwidget>
-  <customwidget>
-   <class>TabResults</class>
-   <extends>QWidget</extends>
-   <header>tabresults.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>TabConfig</class>
-   <extends>QWidget</extends>
-   <header>tabconfig.h</header>
-   <container>1</container>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>
