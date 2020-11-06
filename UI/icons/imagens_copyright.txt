@@ -1,0 +1,5 @@
+All the images in this folder are under a license that allows me to use them in this project. However, the credits for these are below:
+
+- main_window_icon.png
+	license: Personal Use (Non-Commercial Use).
+	url: https://favpng.com/png_view/deep-learning-icon-machine-learning-deep-learning-with-python-artificial-intelligence-png/MKBFgZ0G
