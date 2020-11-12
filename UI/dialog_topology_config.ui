@@ -16,82 +16,7 @@
   <layout class="QGridLayout" name="gridLayout_2">
    <item row="0" column="0">
     <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="0">
-      <widget class="QGroupBox" name="groupBox">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="title">
-        <string>Capa de Entrada</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <layout class="QGridLayout" name="gridLayout_3">
-        <item row="0" column="1">
-         <widget class="QLineEdit" name="lineEdit_neuron_numbers_initial">
-          <property name="enabled">
-           <bool>false</bool>
-          </property>
-          <property name="font">
-           <font>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="0">
-         <widget class="QLabel" name="label">
-          <property name="font">
-           <font>
-            <weight>50</weight>
-            <italic>true</italic>
-            <bold>false</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>Numero de Neuronas</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="0">
-         <widget class="QLabel" name="label_2">
-          <property name="font">
-           <font>
-            <weight>50</weight>
-            <italic>true</italic>
-            <bold>false</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>Funcion de activación</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="1">
-         <widget class="QComboBox" name="comboBox_activation_function_initial">
-          <property name="font">
-           <font>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-     </item>
-     <item row="7" column="0">
+     <item row="6" column="0">
       <widget class="QGroupBox" name="groupBox_2">
        <property name="font">
         <font>
@@ -163,7 +88,7 @@
        </layout>
       </widget>
      </item>
-     <item row="4" column="0">
+     <item row="3" column="0">
       <widget class="QGroupBox" name="groupBox_3">
        <property name="font">
         <font>
