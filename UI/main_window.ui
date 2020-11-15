@@ -248,6 +248,41 @@ border-color: rgb(224, 224, 224);</string>
              <set>Qt::AlignCenter</set>
             </property>
             <layout class="QGridLayout" name="gridLayout_4">
+             <item row="3" column="0">
+              <widget class="QRadioButton" name="radioButton_backpropagation_cascade">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Backpropagation en Cascada</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QWidget" name="widget_topology_diagram" native="true"/>
+             </item>
+             <item row="2" column="0">
+              <widget class="QRadioButton" name="radioButton_backpropagation_primitive">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Backpropagation Primitivo</string>
+               </property>
+              </widget>
+             </item>
              <item row="1" column="0">
               <widget class="QPushButton" name="pushButton_open_topology_editor">
                <property name="enabled">
@@ -258,16 +293,19 @@ border-color: rgb(224, 224, 224);</string>
                </property>
               </widget>
              </item>
-             <item row="0" column="0">
-              <widget class="QWidget" name="widget_topology_diagram" native="true"/>
-             </item>
-             <item row="2" column="0">
-              <widget class="QCheckBox" name="checkBox_backpropagation">
+             <item row="4" column="0">
+              <widget class="QRadioButton" name="radioButton_backpropagation_without">
                <property name="enabled">
                 <bool>false</bool>
                </property>
+               <property name="font">
+                <font>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
                <property name="text">
-                <string>Backpropagation</string>
+                <string>Sin Backpropagation</string>
                </property>
               </widget>
              </item>
@@ -316,42 +354,8 @@ border-color: rgb(224, 224, 224);</string>
            <set>Qt::AlignCenter</set>
           </property>
           <layout class="QGridLayout" name="gridLayout">
-           <item row="1" column="1">
-            <widget class="QTableWidget" name="tableWidget_datasets"/>
-           </item>
-           <item row="5" column="1">
+           <item row="2" column="1">
             <layout class="QHBoxLayout" name="horizontalLayout">
-             <item>
-              <widget class="QLineEdit" name="lineEdit_T_file_name">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QCheckBox" name="checkBox_T_random">
-               <property name="text">
-                <string>Generar aleatoriamente</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item row="1" column="0">
-            <layout class="QVBoxLayout" name="verticalLayout">
-             <item>
-              <spacer name="verticalSpacer">
-               <property name="orientation">
-                <enum>Qt::Vertical</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>20</width>
-                 <height>40</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
              <item>
               <widget class="QPushButton" name="pushButtonUpload_datasets">
                <property name="text">
@@ -360,232 +364,39 @@ border-color: rgb(224, 224, 224);</string>
               </widget>
              </item>
              <item>
-              <spacer name="verticalSpacer_3">
-               <property name="orientation">
-                <enum>Qt::Vertical</enum>
-               </property>
-               <property name="sizeType">
-                <enum>QSizePolicy::Expanding</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>10</width>
-                 <height>40</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
               <widget class="QPushButton" name="pushButtonDelete_datasets">
                <property name="text">
                 <string>Eliminar Selección</string>
                </property>
               </widget>
              </item>
-             <item>
-              <spacer name="verticalSpacer_2">
-               <property name="orientation">
-                <enum>Qt::Vertical</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>20</width>
-                 <height>40</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
             </layout>
            </item>
-           <item row="5" column="0">
-            <widget class="QLabel" name="label_T_file_name">
-             <property name="font">
-              <font>
-               <italic>true</italic>
-               <underline>false</underline>
-               <strikeout>false</strikeout>
-               <kerning>false</kerning>
-              </font>
-             </property>
-             <property name="text">
-              <string>Vector Umbral</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="7" column="1">
-            <widget class="QTableWidget" name="tableWidget_threshold"/>
-           </item>
-           <item row="0" column="0">
-            <widget class="QLabel" name="label_D_file_name">
-             <property name="font">
-              <font>
-               <italic>true</italic>
-              </font>
-             </property>
-             <property name="text">
-              <string>Datos de Entrada y Salida</string>
-             </property>
-            </widget>
-           </item>
-           <item row="7" column="0">
-            <layout class="QVBoxLayout" name="verticalLayout_3">
-             <item>
-              <spacer name="verticalSpacer_7">
-               <property name="orientation">
-                <enum>Qt::Vertical</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>20</width>
-                 <height>40</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
-              <widget class="QPushButton" name="pushButtonUpload_threshold">
-               <property name="text">
-                <string>Subir Umbral</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <spacer name="verticalSpacer_8">
-               <property name="orientation">
-                <enum>Qt::Vertical</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>20</width>
-                 <height>40</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
-              <widget class="QPushButton" name="pushButtonDelete_threshold">
-               <property name="text">
-                <string>Eliminar Umbral</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <spacer name="verticalSpacer_9">
-               <property name="orientation">
-                <enum>Qt::Vertical</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>20</width>
-                 <height>40</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-            </layout>
-           </item>
-           <item row="4" column="0">
-            <layout class="QVBoxLayout" name="verticalLayout_2">
-             <item>
-              <spacer name="verticalSpacer_4">
-               <property name="orientation">
-                <enum>Qt::Vertical</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>20</width>
-                 <height>40</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
-              <widget class="QPushButton" name="pushButtonUpload_weights">
-               <property name="text">
-                <string>Subir Pesos</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <spacer name="verticalSpacer_5">
-               <property name="orientation">
-                <enum>Qt::Vertical</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>20</width>
-                 <height>40</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
-              <widget class="QPushButton" name="pushButtonDelete_weights">
-               <property name="text">
-                <string>Eliminar Selección</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <spacer name="verticalSpacer_6">
-               <property name="orientation">
-                <enum>Qt::Vertical</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>20</width>
-                 <height>40</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-            </layout>
-           </item>
-           <item row="2" column="1">
+           <item row="1" column="1">
             <layout class="QHBoxLayout" name="horizontalLayout_2">
              <item>
-              <widget class="QLineEdit" name="lineEdit_W_file_name">
+              <widget class="QLabel" name="label_D_file_name">
+               <property name="font">
+                <font>
+                 <italic>true</italic>
+                </font>
+               </property>
+               <property name="text">
+                <string>Datos de Entrada y Salida</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_D_file_name">
                <property name="enabled">
                 <bool>false</bool>
                </property>
               </widget>
              </item>
-             <item>
-              <widget class="QCheckBox" name="checkBox_W_random">
-               <property name="text">
-                <string>Generar aleatoriamente</string>
-               </property>
-              </widget>
-             </item>
             </layout>
            </item>
-           <item row="2" column="0">
-            <widget class="QLabel" name="label_W_file_name">
-             <property name="font">
-              <font>
-               <italic>true</italic>
-              </font>
-             </property>
-             <property name="text">
-              <string>Pesos Sinapticos</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="4" column="1">
-            <widget class="QTableWidget" name="tableWidget_weights"/>
-           </item>
-           <item row="0" column="1">
-            <widget class="QLineEdit" name="lineEdit_D_file_name">
-             <property name="enabled">
-              <bool>false</bool>
-             </property>
-            </widget>
+           <item row="3" column="1">
+            <widget class="QTableWidget" name="tableWidget_datasets"/>
            </item>
           </layout>
          </widget>
@@ -783,8 +594,6 @@ border-color: rgb(224, 224, 224);</string>
      <string>Ver</string>
     </property>
     <addaction name="action_preview_datasets"/>
-    <addaction name="action_preview_weights"/>
-    <addaction name="action_preview_threshold"/>
     <addaction name="separator"/>
     <addaction name="action_training_abstract"/>
    </widget>
