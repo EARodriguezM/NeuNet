@@ -1,9 +1,3 @@
 # IDE - JupyterLab
-.ipynb_checkpoints/*
-.__pycache__/*
-/UI/.ipynb_checkpoints/*
-/UI/.__pycache__/*
-/BLL/.ipynb_checkpoints/*
-/BLL/.__pycache__/*
-/DAL/.ipynb_checkpoints/*
-/DAL/.__pycache__/*
+**/.ipynb_checkpoints/*
+**/.__pycache__/*
