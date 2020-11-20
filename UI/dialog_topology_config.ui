@@ -109,7 +109,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_neuron_numbers_hidden">
+           <widget class="QLineEdit" name="lineEdit_neurons_number_hidden">
             <property name="font">
              <font>
               <weight>50</weight>
@@ -191,14 +191,7 @@
          </layout>
         </item>
         <item row="0" column="1">
-         <widget class="QTableView" name="tableView">
-          <property name="font">
-           <font>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
-         </widget>
+         <widget class="QTableWidget" name="tableWidget_hidden_layers"/>
         </item>
        </layout>
       </widget>
