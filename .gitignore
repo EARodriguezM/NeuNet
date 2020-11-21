@@ -1,3 +1,4 @@
 # IDE - JupyterLab
 **/.ipynb_checkpoints/*
 **/.__pycache__/*
+Documentation/*
